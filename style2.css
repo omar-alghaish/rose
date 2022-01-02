@@ -1,0 +1,1196 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+}
+body
+{
+    background-color: white;
+}
+header
+{
+    width:100%;
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: rgba(0, 0, 0, 0.062) 0 5px 100px;
+    align-items: center;
+    z-index: 1000;
+    position: fixed;
+}
+header .ul1
+{
+    display: flex;
+}
+header .ul1 .li1
+    {
+        list-style: none;
+        padding: 30px 10px;
+        text-align: center;
+        position: relative;
+        
+    }
+    header .ul1 li:hover .contain
+    {
+        visibility: visible;
+        opacity: 1;
+        z-index: 1000;
+    }
+    header .ul1 li a 
+    {
+        color: black;
+        text-decoration: none;
+        padding: 10px 10px;
+        position: relative;
+    }
+    
+    .contain
+    {
+        background-color: rgb(255, 255, 255);
+        width: max-content;
+        position: absolute;
+        left: 0;
+        display: flex;
+        height: 400px;
+        bottom: -390px;
+        box-shadow: rgba(0, 0, 0, 0.048) 0 3px 25px;
+        opacity: 0;
+        visibility:hidden;
+    }
+    .contain ul 
+    {
+        height: max-content;
+        width: 150px;
+        margin: 20px 0;
+        padding: 50px 0;
+        display: block;
+        background-color: rgba(255, 255, 255, 0);
+        margin-top: 0;
+        
+    }
+    .contain .div1 ul li 
+    {
+        padding-bottom:5px 0px;
+        margin: 10px;
+        display:flex;
+    }
+    header ul .li1 a::before
+{
+    content: '';
+    position:absolute;
+    width: 1%;
+    height:2px;
+    bottom: -5px;
+    left:0;
+    
+
+}
+    header ul .li1 a:hover:before
+    {
+        width:100%;
+        transition:.4s;
+        background:rgb(255, 0, 0);
+    }
+    
+    
+    header .logo
+    {
+        color:red;
+        font-size: 25px;
+        font-weight:900;
+        font-family:sans-serif;
+    }
+    .contain .div1 ul a
+    {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: fle;
+        
+    }
+    .contain .div1 h4
+    {
+        color: rgb(255, 0, 0);
+        font-size: 18px;
+        font-weight: 300;
+    }
+header .ul2
+{
+    display: flex;
+}
+header .ul2 li
+{
+    list-style: none;
+    margin: 5px;
+}
+header .ul2 li a
+{
+    font-size: 15px;
+    color: rgb(73, 73, 73);
+    transition: .4s;
+}
+header .ul2 li a:hover
+{
+    color: tomato;
+    transition: .4s;
+}
+.container1
+{
+    width: 100%;
+    height: max-content;
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px ,auto));
+    grid-gap: 0;
+}
+.container1 .div3
+{
+    width: 100%;
+    position: relative;
+}
+.container1 .div3 img
+{
+    width: 100%;
+}
+.container1 .div3 div
+{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    left: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+.container1 .div3 div h1
+{
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.container1 .div3 div span
+{
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.container1 .div3 div span a
+{
+    text-decoration: none;
+    color: white;
+    border: white 1px solid;
+    padding: 10px 25px;
+    transition: .5s;
+}
+.container1 .div3 div span a:hover
+{
+    border: rgb(255, 90, 90) 1px solid;
+    transition: .5s;
+    background-color: tomato;
+}
+.container3
+{
+width: 100%;
+height: 500px;
+margin-top: 100px;
+background: url(../images/a19.jpg);
+background-size: cover;
+position: relative;
+}
+.container3 .div12
+{
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    height: 150px;
+    left: 80px;
+    bottom: 50px;
+    position: absolute;
+}
+.container3 h1
+{
+color: rgb(134, 133, 133);
+font-weight: 500;
+margin-top: 20px;
+margin-left: 20px;
+}
+.container3 h2
+{
+color: rgb(0, 0, 0);
+font-weight: 600;
+margin-top: 10px;
+margin-left: 20px;
+margin-bottom: 20px;
+}
+.container3 a
+{
+color: rgb(0, 0, 0);
+font-weight: 500;
+margin-top: 40px;
+margin-left: 20px;
+}
+.container3 a:hover
+{
+    color: rgb(255, 0, 0);
+}
+.container4
+{
+    height:max-content;
+    width: 80%;
+    margin-left: 10%;
+    background-color blue;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px ,1fr));
+    grid-gap: 10px;
+    position: relative;
+    margin-top: 200px;
+}
+.container4 div
+{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+}
+.container4 div img
+{
+    width: 100%;
+    transition: .7s;
+}
+.container4 div img:hover
+{
+    transform: scale(1.1);
+    transition: .7s;
+}
+.container4 div .price
+{
+    background-color: rgb(255, 255, 255);
+    width: 90%;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    border-radius: 2px;
+    transition: .5s;
+}
+.container4 div .price:hover
+{
+    background: #000;
+    transition: .5s;
+}
+.container4 div .price:hover h1
+{
+    color: white;
+}
+.container4 div .price span
+{
+    margin-left: 20px;
+}
+
+.container4 div .price h1
+{
+    font-size: 20px;
+    font-weight: 300;
+    margin-right: 20px;
+    color: #000;
+}
+.container4 div .price h2
+{
+    display: block;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(117, 107, 107);
+
+}
+.container4 .o 
+{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 0;
+    top: -90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container4 .o p
+{
+    color: rgb(153, 145, 145);
+}
+.container4 .o span h1
+{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 500;
+    margin-top:5px ;
+}
+.container4 .o a
+{
+    color: #000;
+}
+footer
+{
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+footer span
+{
+    display: flex;
+    gap: 70px;
+}
+footer div h1
+{
+color: rgb(129, 129, 129);
+font-weight: 500;
+font-size: 20px;
+margin-bottom: 10px;
+}
+footer div p
+{
+    color: white;
+    margin-top: 5px;
+}
+footer div input
+{
+    background:transparent;
+    border: solid 1px rgb(49, 49, 49);
+    padding: 20px 100px;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+footer div .send
+{
+    text-align: center;
+}
+footer div .send a
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(87, 87, 87);
+    padding: 20px 20px;
+    text-decoration: none;
+    width: 150px;
+}
+footer .massege
+{
+    display: flex;
+    gap: 0;
+}
+.container2
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    height:max-content;
+    width: 65%;
+    gap: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 150px;
+}
+.container2 .div5
+{
+    position: relative;
+height: max-content;
+width: 100%;
+margin-left: 50%;
+transform: translateX(-50%);
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+gap: 5px;
+margin-top: 5px;
+overflow: hidden;
+}
+.container2 .div5-2
+{
+    position: absolute;
+    height: 80px;
+    top:-80px;
+    width: 100%;
+    text-align: center;
+}
+.container2 .div5-2 p
+{
+    color: rgb(126, 126, 126);
+    font-size: 14px;
+}
+.container2 .div5-2 h1
+{
+    font-weight: 300;
+}
+
+.container2 .div5 .div5-1
+{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.container2 .div5 img
+{
+    width: 100%;
+    transition: .5s;
+}
+.container2 .div5 img:hover
+{
+    transform: scale(1.2);
+    filter: lur(5px);
+    transition: .5s;
+}
+
+.div5 .price
+{
+    background: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 4%;
+    left: 2%;
+    width: 96%;
+    height: max-content;
+    padding: 10px;
+    border-radius: 2px;
+}
+.div5 .price:hover
+{
+    background: #000;
+    transition: .5s;
+}
+.div5 .price:hover h1
+{
+    color: white;
+}
+.div5 .price:hover h2
+{
+    color: white;
+}
+.div5 .price h1
+{
+    font-size: 17px;
+    font-weight: 100;
+    margin: 3px;
+    color: rgb(78, 78, 78);
+}
+.div5 .price h2
+{
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 5px;
+    color: #000;
+    
+}
+.div10
+{
+    margin-top: 50px;
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+}
+.div10 a
+{
+    color: rgb(59, 59, 59);
+}
+.div10 a:hover
+{
+    color: rgb(0, 0, 0);
+}
+
+
+
+@media only screen and (max-width:800Px)
+{
+    header
+    {
+        width: 100%;
+        position: fixed;
+
+
+    }
+    header .ul1
+    {
+        width: 120px;
+        height:170px ;
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: -170px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.082);
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+    header .ul1 .li1
+    {
+        list-style: none;
+        padding: 10px 0;
+        text-align: center;
+    }
+    header .ul1 li a 
+    {
+        color: black;
+        text-decoration: none;
+        padding: 5px 10px;
+    }
+    .span1
+    {
+        position: absolute;
+        right: 10px;
+        height: 20px;
+        width: 20px;
+        background-color: rgb(255, 255, 255);
+        bottom: 25px;
+        display:inline;
+    }
+    header .span1::before
+    {
+        content: '';
+        width: 20px;
+        height: 5px;
+        background-color: rgb(255, 0, 0);
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+        transition: .3s;
+    }
+    header .span1::after
+    {
+        content: '';
+        width: 20px;
+        height: 5px;
+        background-color: rgb(255, 0, 0);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-radius: 10px;
+        transition: .3s;
+    }
+    header .span1:hover:after
+    {
+        transform:rotate(135deg);
+        bottom: 9px;
+        transition: .5s;
+        height: 2px;
+    }
+    header .span1:hover::before
+    {
+        transform:rotate(45deg);
+        top: 9px;
+        height: 2px;
+    }
+    .span1:hover .ul1
+    {
+        opacity: 1;
+        visibility: visible;
+        transition: .5s;
+    }
+    .contain
+    {
+        background-color: rgb(255, 255, 255);
+        width: 200px;
+        position: absolute;
+        left: -200px;
+        display: block;
+        height: 500px;
+        bottom: -400px;
+        box-shadow: rgba(0, 0, 0, 0.048) 0 5px 25px;
+    }
+    .contain ul 
+    {
+        height: max-content;
+        width:100% ;
+        margin: 20px 0;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+        padding:10px 0;
+    }
+    .contain ul li 
+    {
+        padding: 0;
+        margin: 5px;
+        display:flex;
+    }
+    .contain .div1 ul a
+    {
+        color: rgb(0, 0, 0);
+        font-size: 10px;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        
+    }
+    .ul2
+    {
+        position: absolute;
+        right: 50px;
+    }
+    .logo
+    {
+        position: absolute;
+        left: 50px;
+    }
+    .container1
+    {
+        padding-top: 80px;
+    }
+    .container1 .div3 div h1
+{
+    color: rgb(255, 255, 255);
+    font-weight: 100;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.container1 .div3 div span
+{
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.container1 .div3 div span a
+{
+    text-decoration: none;
+    color: white;
+    border: white 1px solid;
+    padding: 10px 20px;
+}
+.container2
+{
+    width: 100%;
+    margin-left: 0;
+    display: grid;
+    grid-auto-rows: minmax(auto,100px);
+}
+.container3 .div12
+{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 150px;
+    left: 0;
+    bottom: 50px;
+    position: absolute;
+    text-align: center;
+    margin: 0;
+}
+.container4 .o p
+{
+    color: rgb(153, 145, 145);
+    font-size: 10px;
+}
+.container4 .o h1
+{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top:5px ;
+}
+footer
+{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+footer span
+{
+    display: flex;
+    justify-content: space-around;
+}
+footer div h1
+{
+color: rgb(129, 129, 129);
+font-weight: 500;
+font-size: 20px;
+margin-bottom: 10px;
+margin-top: 80px;
+}
+footer div p
+{
+    color: white;
+    margin-top: 5px;
+}
+footer div input
+{
+    background:transparent;
+    border: solid 1px rgb(49, 49, 49);
+    padding: 20px 40px;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+}
+footer div .send
+{
+    text-align: center;
+}
+footer div .send a
+{
+    color: rgb(255, 255, 255);
+    background-color: rgb(87, 87, 87);
+    text-decoration: none;
+    margin-top: 50px;
+    width: 100px;
+}
+.massege
+{
+    width: 100%;
+}
+.container2
+{
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 0;
+}
+.container2 .div5
+{
+width: 100%;
+margin-left: 50%;
+transform: translateX(-50%);
+grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+
+}
+.div5 .price
+{
+    padding: 5px;
+}
+.div5 .price h1
+{
+    font-size: 17px;
+    font-weight: 100;
+    margin: 5px;
+}
+.div5 .price h2
+{
+    font-size: 17px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+.container2 .div5-2 h1 
+{
+    font-size: 25px;
+}
+}
+
+@media only screen and (min-width:942px) and (max-width:1870px)
+{
+
+    .container2
+    {
+        display: block;
+    }
+    .container2 .div5
+    {
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    }
+    .container4
+    {
+        grid-template-columns: repeat(auto-fit, minmax(200px ,1fr));
+    }
+
+}
+}
+@media only screen and (min-width:2818px) and (max-width:1870px)
+{
+
+    .container2
+    {
+        display: block;
+    }
+    .container2 .div5
+    {
+        grid-template-columns: repeat(auto-fit,minmax(390px,1fr));
+    }
+}
+@media only screen and (min-width:586px) and (max-width:930px)
+{
+
+    .container2
+    {
+        display: block;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1frpx));
+    }
+    .container2 .div5
+    {
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+    .container4
+    {
+        grid-template-columns: repeat(auto-fit, minmax(100px ,1fr));
+    }
+    .container4 div .price h1 
+    {
+        font-size: 13px;
+        margin-right: 5px;
+    }
+    .container4 div .price 
+{
+    height: 50px;
+}
+    .container4 div .price span
+{
+    margin-left: 5px;
+}
+    .container4 div .price h2 
+    {
+        font-size: 15px;
+    }
+
+}
+@media only screen and (min-width:1400px) and (max-width:1867px)
+{
+
+    .container2
+    {
+        display: block;
+        grid-template-columns: repeat(auto-fit,minmax(100px,1frpx));
+    }
+    .container2 .div5
+    {
+        grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    }
+}
+@media only screen and (min-width:320px) and (max-width:577px)
+{
+
+    .container2
+    {
+        display: block;
+        grid-template-columns: repeat(auto-fit,minmax(100px,1frpx));
+        width: 95% ;
+    }
+    .container2 .div5
+    {
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    }
+}
+
+/* P2 */
+.container5
+{
+    display: flex;
+    width: 70%;
+    margin-left: 15%;
+    background-color: rgb(255, 255, 255);
+   
+    justify-content: space-between;
+}
+.container5 .container6
+{
+    margin-top: 160px;
+    z-index: 100;
+    width: 30%;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.096);
+}
+.container5 .container7
+{
+    padding-top: 300px;
+    width: 68%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 50px;
+    background-color: rgb(255, 255, 255);
+}
+.container5 .container7 .div1
+{
+    width: 100%;
+    position: relative;
+    border-radius: 3px;
+}
+.container5 .container7 .div1 img
+{
+    width: 100%;
+    padding: 5px;
+}
+.container5 .container7 .div1 div
+{
+    width: 100%;
+    height: 80px;
+    background: white;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+}
+.container5 .container7 .div1 div h2
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+.container5 .container7 .div1 div h3
+{
+    font-size: 16px;
+    margin-top: 5px;
+    color: rgb(255, 130, 108);
+}
+.container5 .container7 .div1 div i
+{
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    background-color: rgb(223, 223, 223);
+    border-radius: 100px;
+    padding: 10px;
+    color: white;
+}
+.container5 .container7 .div1 div i:hover
+{
+    color: rgb(255, 47, 0);
+}
+.container7 span a
+{
+    opacity: 0;
+    visibility: hidden;
+}
+.container5 .container7 .div1 div:hover span a
+{
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.075);
+    text-decoration: none;
+    backdrop-filter: blur(5px);
+    color: white;
+    transition: .7s;
+    visibility: visible;
+    opacity: 1;
+}
+.container8
+{
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    background: rgb(37, 37, 37);
+    left: 0;
+    top: 70px;
+}
+.container8 .div1
+{
+    
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.container8 div .span1
+{
+    display: flex;
+    gap: 10px;
+}
+.container8 div .span1 h2
+{
+    color: rgb(122, 122, 122);
+    font-size: 15px;
+}
+
+.container8 div .span1 a
+{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-decoration: none;
+}
+.container6
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.container6 .div1
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid 1px rgb(236, 236, 236);
+}
+.container6 .div1 h2
+{
+    color: rgb(51, 51, 51);
+    padding: 10px;
+    font-size: 20px;
+}
+.container6 .div1 span
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+.container6 .div1 span a
+{
+    color: #000;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.container6 .div1 span a i
+{
+    background: rgb(206, 206, 206);
+    border-radius: 100px;
+    padding: 4px 8px;
+    color: rgb(105, 105, 105);
+}
+.container6 .div1 input
+{
+color: black;
+height: 100px;
+background-color: blue;
+border: none;
+}
+
+
+.container6 .head
+{
+    position: absolute;
+    width: 100%;
+    top: -50px;
+    text-align: center;
+}
+.container6 .head h1
+{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+
+
+@media only screen and (min-width:847px) and (max-width:1517px)
+{
+   .p2 body 
+    {
+        background: rgb(255, 0, 0);
+    }
+    .p2 .container5 .container7
+    {
+        display: bloc;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    }
+
+}
+@media only screen and (min-width:625px) and (max-width:846px)
+{
+    .p2 body 
+    {
+        background: rgb(0, 255, 21);
+    }
+    .p2 .container5 .container7
+    {
+        display: bloc;
+        grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+        padding-top: 200px;
+    }
+    .p2 .container5 .container7 .div1 div
+    {
+        padding: 5px;
+        height: 40px;
+
+    }
+    .container5 .container7 .div1 div:hover span a
+    {
+        bottom: 40px;
+        padding: 10px;
+        font-size: 10px;
+    }
+    .p2 .container5 .container7 .div1 div h2
+    {
+        font-size: 15px;
+    }
+    .p2 .container5 .container7 .div1 div h3
+    {
+        font-size: 15px;
+    }
+    .p2 .container5 .container7 .div1 div i
+    {
+        top: 5px;
+        padding: 5px;
+        font-size: 10px;
+        right: 0;
+    }
+    .p2 .container8
+    {
+        height: 100px;
+    }
+
+}
+@media only screen and (min-width:320px) and (max-width:624px)
+{ .p2 body 
+    {
+        background: #000;
+    }
+    .p2 .container5
+    {
+       
+    }
+    .p2 .container5 .container7
+    {
+        width: 100%;
+        display: bloc;
+        grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+        gap: 30px;
+        padding-top: 150px;
+    }
+    .p2 .container5 .container7 .div1 div
+    {
+        padding: 5px;
+        height: 40px;
+
+    }
+    .container5 .container7 .div1 div:hover span a
+    {
+        bottom: 40px;
+        padding: 10px;
+        font-size: 10px;
+    }
+    .p2 .container5 .container7 .div1 div h2
+    {
+        font-size: 15px;
+    }
+    .p2 .container5 .container7 .div1 div h3
+    {
+        font-size: 15px;
+    }
+    .p2 .container5 .container7 .div1 div i
+    {
+        top: 5px;
+        padding: 5px;
+        font-size: 10px;
+        right: 0;
+    }
+    .p2 .container5 .container6
+    {
+        display: none;
+    }
+    .container8
+    {
+        height: 50px;
+    }
+    .p2 .container8 .div2 span h2
+{
+    color: rgb(202, 202, 202);
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 100;
+}
+.container8
+{
+    display: none;
+}
+
+}
+
+/* END P2  */
